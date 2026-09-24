@@ -30,25 +30,28 @@ const ListOut = () => {
               </div>
             ))}
           </div>
+
           <div className="pt-4 text-center">
-            <h4 className="text-2xl  md:text-3xl font-bold text-[#2e3744] tracking-tight mb-8">
+            <h4 className="text-2xl md:text-3xl font-bold text-[#2e3744] tracking-tight mb-8">
               Learners From Brands Like
             </h4>
 
             {/* brands */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-2.5 sm:gap-4 py-2 w-full max-w-sm sm:max-w-none mx-auto">
-              {brands.map((brand) => (
-                <div
-                  key={brand.id}
-                  className="bg-white border border-gray-200 rounded-xl px-3 py-2.5 h-12 flex items-center justify-center shadow-xs"
-                >
-                  <img
-                    src={brand.logo}
-                    alt={`${brand.name} logo`}
-                    className="max-h-5 w-auto max-w-[75px] sm:max-w-[85px] object-contain"
-                  />
-                </div>
-              ))}
+              {brands
+                ?.filter((brand) => Boolean(brand?.logo))
+                .map((brand) => (
+                  <div
+                    key={brand.id}
+                    className="bg-white border border-gray-200 rounded-xl px-3 py-2.5 h-12 flex items-center justify-center shadow-xs"
+                  >
+                    <img
+                      src={brand.logo}
+                      alt={`${brand.name || "Brand"} logo`}
+                      className="max-h-5 w-auto max-w-[75px] sm:max-w-[85px] object-contain"
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </div>

@@ -46,15 +46,9 @@ export const brands = [
     name: "PayPal",
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg",
   },
-
   {
     id: 5,
     name: "Uber",
     logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
-  },
-  {
-    id: 6,
-    name: "Airbnb",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
   },
 ];

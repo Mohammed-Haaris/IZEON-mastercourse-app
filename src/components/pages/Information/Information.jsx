@@ -6,27 +6,18 @@ import ListOut from "./Listout/ListOut";
 import Learn from "./LearnPart/Learn";
 import Eligiblity from "./Eligibility/Eligibility";
 import MentorSection from "./MentorSection/MentorSection";
-
-/*
-  Fonts: update the Google Fonts <link> in index.html so Poppins has all weights
-  used here:  ...&family=Poppins:wght@400;500;600;700&display=swap
-
-  Mentor photo: put a TRANSPARENT-background PNG at  public/mentor.png
-  (the blue glow behind him is drawn in CSS below).
-*/
+import characterImage from "../../../assets/character.png";
+import EnrollInformation from "./Enroll/Enroll";
+import FAQSection from "./FAQ/FAQ";
 
 const POPPINS = "font-['Poppins',sans-serif]";
 
 const mentor = {
   name: "Shubham Jain",
-  image: "/mentor.png",
+  image: characterImage,
   role: "EX-TECH LEAD AT GOOGLE & AMAZON",
   origin: "FROM A TIER-2 CITY (JALGAON)",
 };
-
-/* ------------------------------------------------------------------ */
-/* Icons (inline SVG stand-ins for the 3D icons; swap for <img> assets) */
-/* ------------------------------------------------------------------ */
 
 const CalendarIcon = ({ className }) => (
   <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
@@ -192,10 +183,6 @@ const AmazonWordmark = () => (
   </span>
 );
 
-/* ------------------------------------------------------------------ */
-/* Left: mentor card                                                   */
-/* ------------------------------------------------------------------ */
-
 const glassCard =
   "border border-white bg-gradient-to-b from-white/95 to-blue-100/90 shadow-[0_10px_28px_rgba(59,130,246,0.22)] backdrop-blur";
 
@@ -281,10 +268,6 @@ const MentorCard = () => (
     </div>
   </div>
 );
-
-/* ------------------------------------------------------------------ */
-/* Right: masterclass details                                          */
-/* ------------------------------------------------------------------ */
 
 const DetailCard = ({ title, value, Icon }) => (
   <div className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white px-3 py-3 md:gap-4 md:px-5 md:py-[18px]">
@@ -393,6 +376,8 @@ const Information = () => {
       </section>
       <Eligiblity />
       <MentorSection />
+      <EnrollInformation />
+      <FAQSection />
 
       {/* 4. Sticky bottom action bar */}
       <div className="fixed inset-x-0 bottom-0 z-50 flex justify-center rounded-t-3xl border-2 border-b-0 border-[#FF0000] bg-white px-4 pb-3 pt-3 shadow-[0_-8px_30px_rgba(0,0,0,0.06)]">

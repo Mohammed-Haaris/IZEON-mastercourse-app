@@ -1,7 +1,5 @@
 /** @format */
 
-import React from "react";
-
 const MentorSection = () => {
   return (
     <section className="w-full bg-[#0b1016] text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
@@ -17,23 +15,23 @@ const MentorSection = () => {
             <div className="relative z-20 flex justify-between items-start gap-2 px-1">
               {/* 10+ Years Badge */}
               <div className="bg-white/95 backdrop-blur-md rounded-2xl py-2 px-2.5 text-center shadow-md border border-white/60 min-w-[95px]">
-                <div className="text-[13px] font-black text-slate-900 leading-tight">
+                <div className="text-[13px] font-black text-gray-900 leading-tight">
                   10+ YEARS
                 </div>
-                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight mt-0.5">
+                <div className="text-[7.5px] font-bold text-gray-500 uppercase tracking-tight leading-tight mt-0.5">
                   OF INDUSTRY <br /> EXPERIENCE
                 </div>
               </div>
 
               {/* Mentored 500+ Badge */}
               <div className="bg-white/95 backdrop-blur-md rounded-2xl py-2 px-2.5 text-center shadow-md border border-white/60 min-w-[95px]">
-                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight">
+                <div className="text-[7.5px] font-bold text-gray-500 uppercase tracking-tight leading-tight">
                   MENTORED
                 </div>
-                <div className="text-sm font-black text-slate-900 leading-tight my-0.5">
+                <div className="text-lg font-blue text-gray-900 leading-tight my-0.5">
                   500+
                 </div>
-                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight">
+                <div className="text-[7.5px] font-bold text-gray-500 uppercase tracking-tight leading-tight">
                   ENGINEERS
                 </div>
               </div>
@@ -42,7 +40,7 @@ const MentorSection = () => {
             {/* Center Mentor Cutout Portrait */}
             <div className="relative z-10 flex justify-center -mt-4 -mb-8 pointer-events-none">
               <img
-                src="src/assets/mentorImage.png" /* Use your cutout transparent PNG here */
+                src="src/assets/character.png" /* Use your cutout transparent PNG here */
                 alt="Shubham Jain"
                 className="w-56 sm:w-60 h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]"
               />
@@ -50,13 +48,13 @@ const MentorSection = () => {
 
             {/* Bottom Frosted Name Card */}
             <div className="relative z-20 bg-white/95 backdrop-blur-md rounded-2xl py-3 px-4 shadow-[0_10px_25px_rgba(0,0,0,0.3)] border border-white/80 text-center text-slate-900">
-              <h4 className="text-[17px] font-extrabold text-slate-900 tracking-tight leading-none">
+              <h4 className="text-[17px] font-extrabold text-gray-900 tracking-tight leading-none">
                 Shubham Jain
               </h4>
-              <p className="text-[10px] font-bold text-slate-600 uppercase tracking-tight mt-1">
+              <p className="text-[10px] font-bold text-gray-600 uppercase tracking-tight mt-1">
                 EX-TECH LEAD AT GOOGLE & AMAZON
               </p>
-              <p className="text-[8.5px] font-medium text-slate-400 uppercase tracking-wider mt-0.5">
+              <p className="text-[8.5px] font-medium text-gray-400 uppercase tracking-wider mt-0.5">
                 FROM A TIER-2 CITY (JALGAON)
               </p>
 
