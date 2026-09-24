@@ -37,9 +37,9 @@ const ListOut = () => {
 
             {/* brands */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-2.5 sm:gap-4 py-2 w-full max-w-sm sm:max-w-none mx-auto">
-              {brands.map((brand, index) => (
+              {brands.map((brand) => (
                 <div
-                  key={index}
+                  key={brand.id}
                   className="bg-white border border-gray-200 rounded-xl px-3 py-2.5 h-12 flex items-center justify-center shadow-xs"
                 >
                   <img
