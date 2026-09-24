@@ -25,42 +25,35 @@ export const statistics = [
 
 export const brands = [
   {
+    id: 1,
     name: "Uber",
     logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
   },
+
   {
-    name: "Airbnb",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
-  },
-  {
-    name: "Citibank",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Citibank.svg",
-  },
-  {
+    id: 2,
     name: "Google",
     logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
   },
   {
+    id: 3,
     name: "Amazon",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
   },
+
   {
-    name: "OYO",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Oyo_Rooms_logo.svg",
-  },
-  {
+    id: 4,
     name: "PayPal",
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg",
   },
+
   {
-    name: "TEDx",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/0/09/TEDx_logo.svg",
-  },
-  {
+    id: 5,
     name: "Uber",
     logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
   },
   {
+    id: 6,
     name: "Airbnb",
     logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
   },
