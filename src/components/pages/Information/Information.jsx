@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Calendar, Clock } from "lucide-react";
 import ListOut from "./Listout/ListOut";
 import Learn from "./LearnPart/Learn";
+import Eligiblity from "./Eligibility/Eligibility";
+import MentorSection from "./MentorSection/MentorSection";
 
 const Information = () => {
   const navigate = useNavigate();
@@ -120,12 +122,14 @@ const Information = () => {
       <section>
         <Learn />
       </section>
+      <Eligiblity />
+      <MentorSection />
 
-      {/* 4. Sticky Bottom Action Prompt */}
+      {/* 4. Sticky Bottom Action button */}
       <div className="fixed bottom-0 inset-x-0 bg-white border-t border-slate-100 p-4 shadow-[0_-8px_30px_rgb(0,0,0,0.04)] z-50 flex justify-center">
         <button
           onClick={() => navigate("/studentform")}
-          className="w-full max-w-xl bg-[#E11D48] hover:bg-[#BE123C] text-white font-extrabold text-base tracking-wider uppercase py-4 px-8 rounded-xl shadow-lg shadow-rose-500/20 active:scale-[0.99] transition-all duration-150"
+          className="w-full max-w-xl bg-[#FF0000] hover:bg-[#FF9999] text-white font-extrabold text-base tracking-wider uppercase py-4 px-8 rounded-xl shadow-lg shadow-rose-500/20 active:scale-[0.99] transition-all duration-150"
         >
           Enroll Now For ₹ 9
         </button>
