@@ -21,7 +21,7 @@ const Eligiblity = () => {
       <section className="w-full bg-[#fbfbfb] py-14 px-4 sm:px-6 lg:px-8 font-sans">
         <div className="max-w-5xl mx-auto">
           {/* Section Heading */}
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#2d3748] text-center mb-10 sm:mb-12">
+          <h2 className="text-3xl md:text-4xl font-medium  text-gray-600 text-center mb-10 sm:mb-12">
             Who This Is For
           </h2>
 

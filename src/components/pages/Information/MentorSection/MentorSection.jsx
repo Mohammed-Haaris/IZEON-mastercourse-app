@@ -7,67 +7,70 @@ const MentorSection = () => {
     <section className="w-full bg-[#0b1016] text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-14">
         {/* Left Column: Mentor Visual Card */}
-        <div className="w-full max-w-[340px] sm:max-w-[380px] shrink-0">
-          <div className="relative rounded-3xl border border-sky-400/40 bg-gradient-to-b from-[#173859] via-[#0e2238] to-[#0a1523] p-4 pt-6 shadow-[0_0_50px_-10px_rgba(56,189,248,0.25)] overflow-hidden text-center">
-            {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-sky-500/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="w-full max-w-[320px] sm:max-w-[340px] shrink-0 mx-auto lg:mx-0">
+          <div className="relative rounded-[2.5rem] border border-sky-400/40 bg-gradient-to-b from-[#1b507f] via-[#0f2a47] to-[#0a1829] px-3 pt-6 pb-4 shadow-[0_0_50px_rgba(56,189,248,0.3)] overflow-hidden">
+            {/* Inner Electric Cyan Spotlight Rings */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(56,189,248,0.45)_0%,rgba(14,34,56,0.85)_65%,transparent_100%)] pointer-events-none" />
+            <div className="absolute top-10 left-1/2 -translate-x-1/2 w-48 h-48 rounded-full border border-sky-300/20 blur-xs pointer-events-none" />
 
-            {/* Top Stat Badges */}
-            <div className="relative z-10 flex justify-between items-start px-2 mb-2">
-              <div className="bg-white/95 backdrop-blur-sm rounded-xl py-1.5 px-2.5 text-center shadow-md border border-gray-100">
-                <span className="block text-xs font-black text-gray-900 leading-tight">
+            {/* Top Floating Stat Badges */}
+            <div className="relative z-20 flex justify-between items-start gap-2 px-1">
+              {/* 10+ Years Badge */}
+              <div className="bg-white/95 backdrop-blur-md rounded-2xl py-2 px-2.5 text-center shadow-md border border-white/60 min-w-[95px]">
+                <div className="text-[13px] font-black text-slate-900 leading-tight">
                   10+ YEARS
-                </span>
-                <span className="block text-[8px] font-bold text-gray-500 tracking-wider">
-                  OF INDUSTRY EXPERIENCE
-                </span>
+                </div>
+                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight mt-0.5">
+                  OF INDUSTRY <br /> EXPERIENCE
+                </div>
               </div>
 
-              <div className="bg-white/95 backdrop-blur-sm rounded-xl py-1.5 px-2.5 text-center shadow-md border border-gray-100">
-                <span className="block text-[8px] font-bold text-gray-500 tracking-wider">
+              {/* Mentored 500+ Badge */}
+              <div className="bg-white/95 backdrop-blur-md rounded-2xl py-2 px-2.5 text-center shadow-md border border-white/60 min-w-[95px]">
+                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight">
                   MENTORED
-                </span>
-                <span className="block text-sm font-black text-gray-900 leading-none">
+                </div>
+                <div className="text-sm font-black text-slate-900 leading-tight my-0.5">
                   500+
-                </span>
-                <span className="block text-[8px] font-bold text-gray-500 tracking-wider">
+                </div>
+                <div className="text-[7.5px] font-bold text-slate-500 uppercase tracking-tight leading-tight">
                   ENGINEERS
-                </span>
+                </div>
               </div>
             </div>
 
-            {/* Mentor Image */}
-            <div className="relative z-0 -mt-3 mb-2 flex justify-center">
+            {/* Center Mentor Cutout Portrait */}
+            <div className="relative z-10 flex justify-center -mt-4 -mb-8 pointer-events-none">
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600"
+                src="src/assets/mentorImage.png" /* Use your cutout transparent PNG here */
                 alt="Shubham Jain"
-                className="w-48 sm:w-56 h-56 sm:h-64 object-cover object-top rounded-2xl"
+                className="w-56 sm:w-60 h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]"
               />
             </div>
 
-            {/* Bottom Floating White Info Box */}
-            <div className="relative z-10 bg-white rounded-2xl py-3 px-4 shadow-lg text-gray-900 border border-gray-100">
-              <h4 className="text-base sm:text-lg font-extrabold text-[#111827]">
+            {/* Bottom Frosted Name Card */}
+            <div className="relative z-20 bg-white/95 backdrop-blur-md rounded-2xl py-3 px-4 shadow-[0_10px_25px_rgba(0,0,0,0.3)] border border-white/80 text-center text-slate-900">
+              <h4 className="text-[17px] font-extrabold text-slate-900 tracking-tight leading-none">
                 Shubham Jain
               </h4>
-              <p className="text-[10px] sm:text-[11px] font-semibold text-gray-500 uppercase tracking-tight mt-0.5">
-                Ex-Tech Lead at Google & Amazon
+              <p className="text-[10px] font-bold text-slate-600 uppercase tracking-tight mt-1">
+                EX-TECH LEAD AT GOOGLE & AMAZON
               </p>
-              <p className="text-[9px] text-gray-400 font-medium">
+              <p className="text-[8.5px] font-medium text-slate-400 uppercase tracking-wider mt-0.5">
                 FROM A TIER-2 CITY (JALGAON)
               </p>
 
-              {/* Logos */}
-              <div className="flex items-center justify-center gap-5 mt-2 pt-1 border-t border-gray-100">
+              {/* Brand Logos */}
+              <div className="flex items-center justify-center gap-6 mt-2 pt-1.5 border-t border-slate-100">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
                   alt="Google"
-                  className="h-4 object-contain"
+                  className="h-3.5 object-contain"
                 />
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
                   alt="Amazon"
-                  className="h-3.5 object-contain"
+                  className="h-3 object-contain"
                 />
               </div>
             </div>
