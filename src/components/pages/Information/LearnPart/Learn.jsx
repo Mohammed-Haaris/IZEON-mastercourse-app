@@ -5,29 +5,29 @@ import { curriculum } from "./LearnList";
 const Learn = () => {
   return (
     <>
-      <section className="w-full text-center bg-[#1D2545] text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
+      <section className="w-full text-center bg-[#030B17] text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
         <h1 className="text-2xl text-4xl  lg:text-5xl font-medium tracking-tight mb-3">
           What You'll Learn
         </h1>
-        <p className="text-base sm:text-lg md:text-xl font-medium text-gray-300 mb-10 sm:mb-14">
+        <p className="text-base sm:text-lg md:text-3xl font-medium text-gray-300 mb-10 md:mb-8">
           Everything You Need To Go From Stuck To Shortlisted{" "}
           <span className="text-[#3b82f6] font-semibold">— In 4 Months</span>
         </p>
 
-        <div className="grid grid-cols-1 md:px-30 md:grid-cols-2 gap-4 sm:gap-6 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-5xl mx-auto px-2 sm:px-4 text-left">
           {curriculum.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl p-3 sm:p-4 shadow-lg border border-gray-100 flex flex-col justify-start"
+              className="bg-white rounded-2xl p-2 sm:p-2.5 shadow-lg border border-gray-100 flex flex-col justify-between w-full overflow-hidden"
             >
-              {/* blue header */}
-              <div className="bg-[#2563eb] text-white text-center font-bold text-base sm:text-lg py-3 px-4 rounded-xl shadow-xs">
+              {/* Blue Header - keeping your exact font classes */}
+              <div className="bg-[#1A73E8] text-white text-center font-medium text-base md:text-2xl py-2 px-3 rounded-xl shadow-xs">
                 {item.title}
               </div>
 
-              {/* card body */}
-              <div className="p-4 sm:p-5 flex-1 flex items-center">
-                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed font-normal text-center sm:text-left">
+              {/* Card Body - keeping your exact font classes */}
+              <div className="px-3 py-3 sm:px-4 sm:py-4 flex-1 flex items-center">
+                <p className="text-gray-700 text-xs sm:text-sm md:text-[15px] leading-relaxed font-normal text-left">
                   {item.description}
                 </p>
               </div>
