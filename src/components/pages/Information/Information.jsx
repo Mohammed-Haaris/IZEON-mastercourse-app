@@ -3,6 +3,8 @@
 import stringData from "../../../stringValues/stringValues";
 import { useNavigate } from "react-router-dom";
 import { Calendar, Clock } from "lucide-react";
+import ListOut from "./Listout/ListOut";
+import Learn from "./LearnPart/Learn";
 
 const Information = () => {
   const navigate = useNavigate();
@@ -110,6 +112,13 @@ const Information = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="mt-5 py-6">
+        <ListOut />
+      </section>
+      <section>
+        <Learn />
       </section>
 
       {/* 4. Sticky Bottom Action Prompt */}
