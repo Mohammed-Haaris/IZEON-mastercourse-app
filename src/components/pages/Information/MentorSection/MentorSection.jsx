@@ -1,4 +1,5 @@
 /** @format */
+import characterImage from "../../../../assets/character.png";
 
 const MentorSection = () => {
   return (
@@ -40,7 +41,7 @@ const MentorSection = () => {
             {/* Center Mentor Cutout Portrait */}
             <div className="relative z-10 flex justify-center -mt-4 -mb-8 pointer-events-none">
               <img
-                src="src/assets/character.png" /* Use your cutout transparent PNG here */
+                src={characterImage} /* Use your cutout transparent PNG here */
                 alt="Shubham Jain"
                 className="w-56 sm:w-60 h-auto object-contain drop-shadow-[0_15px_25px_rgba(0,0,0,0.6)]"
               />
