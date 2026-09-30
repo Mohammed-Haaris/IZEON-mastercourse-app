@@ -288,7 +288,7 @@ const MasterclassDetails = ({ onEnroll }) => (
     {/* Tab */}
     <div className="mx-auto w-[76%] rounded-t-2xl border border-b-0 border-blue-300/70 bg-[#E8F0FE] py-3 text-center md:py-[14px]">
       <h2 className="text-base font-bold uppercase tracking-tight text-[#1A73E8] sm:text-xl md:text-[26px]">
-        Masterclass Details
+        Master class Details
       </h2>
     </div>
 
@@ -307,10 +307,6 @@ const MasterclassDetails = ({ onEnroll }) => (
     </div>
   </div>
 );
-
-/* ------------------------------------------------------------------ */
-/* Page                                                                */
-/* ------------------------------------------------------------------ */
 
 const Information = () => {
   const navigate = useNavigate();
