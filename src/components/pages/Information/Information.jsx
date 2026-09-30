@@ -13,10 +13,10 @@ import FAQSection from "./FAQ/FAQ";
 const POPPINS = "font-['Poppins',sans-serif]";
 
 const mentor = {
-  name: "Shubham Jain",
+  name: "IZEON IT TRAINING",
   image: characterImage,
   role: "EX-TECH LEAD AT GOOGLE & AMAZON",
-  origin: "FROM A TIER-2 CITY (JALGAON)",
+  origin: "CHENNAI CITY",
 };
 
 const CalendarIcon = ({ className }) => (
@@ -294,30 +294,15 @@ const MasterclassDetails = ({ onEnroll }) => (
 
     {/* Panel */}
     <div className="rounded-2xl bg-[#E8F0FE] p-3">
-      <div className="grid grid-cols-2 items-start gap-3">
-        <div className="flex flex-col gap-3">
-          <DetailCard
-            title="Date"
-            value={stringData.stats.date}
-            Icon={CalendarIcon}
-          />
-          <DetailCard title="Duration" value="90 Minutes" Icon={PinIcon} />
-        </div>
-        <div className="flex flex-col gap-3">
-          <DetailCard
-            title="Time"
-            value={stringData.stats.time}
-            Icon={ClockIcon}
-          />
-          <DetailCard title="Language" value="English" Icon={GlobeIcon} />
-        </div>
+      <div className="flex flex-col items-center text-center gap-3">
+        <DetailCard title="Duration" value="90 Days" Icon={PinIcon} />
       </div>
 
       <button
         onClick={onEnroll}
         className="mx-auto mt-3 block w-[92%] rounded-xl border border-red-700/40 bg-[#FF0000] py-4 text-lg font-semibold uppercase text-white shadow-md transition-all duration-150 hover:bg-[#E60000] active:scale-[0.99] sm:w-[81%] md:py-6 md:text-2xl"
       >
-        Enroll Now For ₹ 9
+        Enroll Now
       </button>
     </div>
   </div>
@@ -353,7 +338,7 @@ const Information = () => {
         <p className="mt-6 text-base font-normal leading-relaxed text-[#5A6E85] md:text-xl max-w-4xl mx-auto">
           Follow A Proven{" "}
           <span className="font-bold text-[#1A73E8]">
-            4-Month Roadmap Covering DSA + System Design
+            4-Month Training DSA + System Design
           </span>{" "}
           — Built For Working Engineers Who Want An Offer Letter, Not Just A
           Certificate.
@@ -385,7 +370,7 @@ const Information = () => {
           onClick={goToForm}
           className={`${POPPINS} h-14 w-full max-w-[561px] rounded-xl bg-[#FF0000] text-lg font-semibold uppercase text-white shadow-lg shadow-rose-500/20 transition-all duration-150 hover:bg-[#FF9999] active:scale-[0.99] md:h-[72px] md:text-2xl`}
         >
-          Enroll Now For ₹ 9
+          Enroll Now
         </button>
       </div>
     </div>

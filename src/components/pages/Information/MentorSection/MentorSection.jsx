@@ -50,7 +50,7 @@ const MentorSection = () => {
             {/* Bottom Frosted Name Card */}
             <div className="relative z-20 bg-white/95 backdrop-blur-md rounded-2xl py-3 px-4 shadow-[0_10px_25px_rgba(0,0,0,0.3)] border border-white/80 text-center text-slate-900">
               <h4 className="text-[17px] font-extrabold text-gray-900 tracking-tight leading-none">
-                Shubham Jain
+                IZEON IT TRAINING
               </h4>
               <p className="text-[10px] font-bold text-gray-600 uppercase tracking-tight mt-1">
                 EX-TECH LEAD AT GOOGLE & AMAZON
