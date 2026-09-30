@@ -31,19 +31,6 @@ const phoneTheme = {
   width: "100%",
 };
 
-/* Razorpay logo */
-const RazorpayLogo = () => (
-  <div className="flex items-center justify-center gap-1.5 sm:gap-2">
-    <svg viewBox="0 0 26 30" className="h-7 sm:h-9 w-auto" aria-hidden="true">
-      <polygon points="9,0 26,0 17,14 0,14" fill="#3395FF" />
-      <polygon points="9,14 17,14 8,30 0,30" fill="#072654" />
-    </svg>
-    <span className="italic font-extrabold text-[#072654] text-2xl sm:text-[32px] tracking-tight leading-none">
-      Razorpay
-    </span>
-  </div>
-);
-
 const StudentForm = () => {
   const [formData, setFormData] = useState({
     studentname: "",
@@ -106,8 +93,7 @@ const StudentForm = () => {
               of IT professionals already on the path to MAANG.
             </p>
 
-            {/* Price Badge */}
-            <div className="mt-6 sm:mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
+            {/* <div className="mt-6 sm:mt-10 flex flex-wrap items-center gap-3 sm:gap-4">
               <span className="text-xl sm:text-2xl text-slate-400 line-through">
                 ₹99
               </span>
@@ -119,7 +105,7 @@ const StudentForm = () => {
               <span className="rounded-full bg-emerald-500 px-3 py-1 text-xs sm:text-sm font-bold uppercase tracking-wider text-white">
                 Save ₹90
               </span>
-            </div>
+            </div> */}
 
             {/* Reviews */}
             <div className="mt-5 sm:mt-7 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs sm:text-sm md:text-base text-slate-300">
@@ -225,92 +211,6 @@ const StudentForm = () => {
                   className={inputClass}
                   required
                 />
-              </div>
-
-              {/* Order summary */}
-              <div className="pt-2">
-                <div className="mb-2.5 flex justify-between text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-500">
-                  <span>Item</span>
-                  <span>Price</span>
-                </div>
-
-                <div className="space-y-2.5 sm:space-y-3">
-                  <label className="flex items-center justify-between gap-3 rounded-xl border border-slate-200 bg-slate-50 p-3 sm:p-4 cursor-pointer hover:bg-slate-100/80 transition">
-                    <div className="flex items-center gap-2.5 sm:gap-3">
-                      <input
-                        type="radio"
-                        name="pricing"
-                        defaultChecked
-                        className="w-4 h-4 sm:w-5 sm:h-5 accent-slate-900"
-                      />
-                      <div>
-                        <p className="text-xs sm:text-sm font-semibold text-slate-900">
-                          One Time Fee Pricing
-                        </p>
-                        <p className="text-[11px] sm:text-xs text-slate-500">
-                          One-time payment
-                        </p>
-                      </div>
-                    </div>
-                    <div className="text-right shrink-0">
-                      <p className="text-xs sm:text-base font-bold text-slate-900">
-                        <span className="text-[10px] sm:text-xs font-normal text-slate-500 mr-1">
-                          INR
-                        </span>
-                        9
-                      </p>
-                      <p className="text-[10px] sm:text-xs text-slate-500">
-                        one-time
-                      </p>
-                    </div>
-                  </label>
-
-                  <div className="flex items-center justify-between gap-2 rounded-xl border border-slate-200 p-3 sm:p-3.5 text-xs sm:text-sm">
-                    <span className="text-slate-600 truncate">
-                      Social Continent Paid Webinar
-                    </span>
-                    <span className="font-semibold text-slate-900 shrink-0">
-                      INR 9
-                    </span>
-                  </div>
-
-                  <div className="flex items-center justify-between rounded-xl border border-slate-200 p-3.5 sm:p-4 bg-slate-50/50">
-                    <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-600">
-                      Total
-                    </span>
-                    <span className="text-lg sm:text-2xl font-bold text-slate-900">
-                      <span className="text-xs sm:text-sm font-normal text-slate-500 mr-1">
-                        INR
-                      </span>
-                      9.00
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Payment method */}
-              <div className="pt-2">
-                <p className="mb-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-500">
-                  Pay via
-                </p>
-                <label className="flex items-center gap-2 cursor-pointer w-fit">
-                  <input
-                    type="radio"
-                    name="payment"
-                    defaultChecked
-                    className="w-4 h-4 accent-amber-500"
-                  />
-                  <span className="text-sm sm:text-base font-medium text-slate-900">
-                    Razorpay
-                  </span>
-                </label>
-
-                <fieldset className="mt-3 rounded-lg border border-blue-400/80 px-3 pb-3 pt-1 text-center">
-                  <legend className="mx-auto px-2 text-[11px] sm:text-xs font-medium text-blue-600">
-                    Completing payment with
-                  </legend>
-                  <RazorpayLogo />
-                </fieldset>
               </div>
 
               {/* CTA Button */}
